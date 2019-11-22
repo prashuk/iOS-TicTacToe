@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c6p-IJ-sSk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="juw-5b-DXy">
+                                <rect key="frame" x="39" y="241" width="325" height="440"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross" translatesAutoresizingMaskIntoConstraints="NO" id="vOa-Ak-xcF" customClass="TTTImageView" customModule="TicTacToe" customModuleProvider="target">
+                                <rect key="frame" x="66" y="329" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross" translatesAutoresizingMaskIntoConstraints="NO" id="C5v-ri-j7k" customClass="TTTImageView" customModule="TicTacToe" customModuleProvider="target">
+                                <rect key="frame" x="166" y="329" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross" translatesAutoresizingMaskIntoConstraints="NO" id="IAO-U5-aW4" customClass="TTTImageView" customModule="TicTacToe" customModuleProvider="target">
+                                <rect key="frame" x="271" y="329" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross" translatesAutoresizingMaskIntoConstraints="NO" id="zXq-TH-QIj" customClass="TTTImageView" customModule="TicTacToe" customModuleProvider="target">
+                                <rect key="frame" x="66" y="426" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross" translatesAutoresizingMaskIntoConstraints="NO" id="U0h-US-9Mr" customClass="TTTImageView" customModule="TicTacToe" customModuleProvider="target">
+                                <rect key="frame" x="166" y="527" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross" translatesAutoresizingMaskIntoConstraints="NO" id="Jme-wa-SuI" customClass="TTTImageView" customModule="TicTacToe" customModuleProvider="target">
+                                <rect key="frame" x="271" y="527" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Og-1df" customClass="TTTImageView" customModule="TicTacToe" customModuleProvider="target">
+                                <rect key="frame" x="166" y="427" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross" translatesAutoresizingMaskIntoConstraints="NO" id="XYd-5m-fqw" customClass="TTTImageView" customModule="TicTacToe" customModuleProvider="target">
+                                <rect key="frame" x="271" y="426" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cross" translatesAutoresizingMaskIntoConstraints="NO" id="mR6-b5-Xqy" customClass="TTTImageView" customModule="TicTacToe" customModuleProvider="target">
+                                <rect key="frame" x="66" y="527" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jbx-fG-jDv">
+                        <barButtonItem key="leftBarButtonItem" title="Connect" id="G9p-0H-dlG">
+                            <connections>
+                                <action selector="connectWithPlayer:" destination="BYZ-38-t0r" id="hOt-qa-8qa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="New Game" id="I1G-0i-e5T"/>
+                    </navigationItem>
+                    <connections>
+                        <outletCollection property="fields" destination="vOa-Ak-xcF" collectionClass="NSMutableArray" id="h1S-sS-39P"/>
+                        <outletCollection property="fields" destination="C5v-ri-j7k" collectionClass="NSMutableArray" id="yG0-Z1-R1L"/>
+                        <outletCollection property="fields" destination="IAO-U5-aW4" collectionClass="NSMutableArray" id="BYV-nn-S9A"/>
+                        <outletCollection property="fields" destination="zXq-TH-QIj" collectionClass="NSMutableArray" id="tYK-Dq-qft"/>
+                        <outletCollection property="fields" destination="SNS-Og-1df" collectionClass="NSMutableArray" id="I78-em-vT2"/>
+                        <outletCollection property="fields" destination="XYd-5m-fqw" collectionClass="NSMutableArray" id="5dq-Vx-ATL"/>
+                        <outletCollection property="fields" destination="mR6-b5-Xqy" collectionClass="NSMutableArray" id="TIc-QO-8Zl"/>
+                        <outletCollection property="fields" destination="U0h-US-9Mr" collectionClass="NSMutableArray" id="Wgk-Ta-DPu"/>
+                        <outletCollection property="fields" destination="Jme-wa-SuI" collectionClass="NSMutableArray" id="8bH-Er-jxy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ToO-Jj-6xR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c6p-IJ-sSk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vDB-hX-g0D">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hwx-EY-7Rr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhV-4N-KuR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cross" width="44.333332061767578" height="37.333332061767578"/>
+        <image name="frame" width="129.66667175292969" height="132.33332824707031"/>
+    </resources>
+</document>
