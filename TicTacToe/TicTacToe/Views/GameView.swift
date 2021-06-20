@@ -15,6 +15,10 @@ struct GameView: View {
         GeometryReader { geometry in
             VStack {
                 Spacer()
+                Text("Tic-Tac-Toe")
+                    .foregroundColor(.green)
+                    .font(.system(size: 32, weight: .bold, design: .rounded))
+                Spacer()
                 LazyVGrid(columns: viewModel.columns, spacing: 5) {
                     ForEach(0..<9) { i in
                         ZStack {
@@ -27,6 +31,14 @@ struct GameView: View {
                     }
                 }
                 Spacer()
+                HStack {
+                    Text("You: \(viewModel.humanWon)")
+                    Spacer()
+                    Text("Computer: \(viewModel.computerWon)")
+                }
+                .padding()
+                .foregroundColor(.green)
+                .font(.system(size: 21, weight: .semibold, design: .monospaced))
             }
             .disabled(viewModel.isGameBoardDisable)
             .padding()

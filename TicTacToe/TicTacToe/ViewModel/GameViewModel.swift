@@ -19,6 +19,9 @@ final class GameViewModel: ObservableObject {
     @Published var isGameBoardDisable = false
     @Published var alertItem: AlertItem?
     
+    @Published var humanWon = 0
+    @Published var computerWon = 0
+    
     func processPlayerMoves(for position: Int) {
         
         // Human move processing
@@ -27,6 +30,7 @@ final class GameViewModel: ObservableObject {
         moves[position] = Move(player: isHumanTurn ? .human : .computer, boardIndex: position)
         
         if winningCondition(for: .human, in: moves) {
+            humanWon = humanWon + 1
             alertItem = AlertContext.humanWin
             return
         }
@@ -45,6 +49,7 @@ final class GameViewModel: ObservableObject {
             isGameBoardDisable = false
             
             if winningCondition(for: .computer, in: moves) {
+                computerWon = computerWon + 1
                 alertItem = AlertContext.computerWin
                 return
             }
